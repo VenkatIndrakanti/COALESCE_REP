@@ -1,0 +1,165 @@
+fileVersion: 1
+id: 331a7271-a621-4b9e-8a6b-abd503a666f5
+name: LINK_CLAIMS_PATIENTS_PROVIDERS
+operation:
+  config:
+    disable_hwm: true
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: DEV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4465b642-872f-4358-8061-086276e55dc9
+          stepCounter: 331a7271-a621-4b9e-8a6b-abd503a666f5
+        config:
+          is_Link_hk: true
+        dataType: STRING
+        description: ""
+        name: L_CLAIM_PATIENT_PROVIDER_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b52b5600-e1b9-4288-b51b-39426c58e948
+                stepCounter: 0a94d0ff-d6b1-4cb0-b938-6af885fb4b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b8c71523-b4e7-46f8-844b-ffdecf1ab75b
+          stepCounter: 331a7271-a621-4b9e-8a6b-abd503a666f5
+        config: {}
+        dataType: STRING
+        description: ""
+        name: H_CLAIM_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c197747d-91b5-4458-98fb-3a5e20a010d4
+                stepCounter: 0a94d0ff-d6b1-4cb0-b938-6af885fb4b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f5cb5170-73da-4c3c-80fb-4df80d7f5326
+          stepCounter: 331a7271-a621-4b9e-8a6b-abd503a666f5
+        config: {}
+        dataType: STRING
+        description: ""
+        name: H_PATIENT_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a3755d18-314e-4c1a-a52a-7915874ff65a
+                stepCounter: 0a94d0ff-d6b1-4cb0-b938-6af885fb4b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3cfda95a-daa7-4f9f-9056-d40aad550eb4
+          stepCounter: 331a7271-a621-4b9e-8a6b-abd503a666f5
+        config: {}
+        dataType: STRING
+        description: ""
+        name: H_PROVIDER_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 41bacaf4-507e-4bfc-afd9-6f4291e04828
+                stepCounter: 0a94d0ff-d6b1-4cb0-b938-6af885fb4b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f9282c3f-3423-47ac-ad93-745fc0ec968d
+          stepCounter: 331a7271-a621-4b9e-8a6b-abd503a666f5
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d4435114-ab66-4ef7-9d05-c168c49dd2b5
+                stepCounter: 0a94d0ff-d6b1-4cb0-b938-6af885fb4b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 64526ca4-d2a1-4b03-b750-6e87ce131af0
+          stepCounter: 331a7271-a621-4b9e-8a6b-abd503a666f5
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: PATIENTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a267f0f3-8486-4c02-8d84-9ebf5b483a1b
+                stepCounter: 0a94d0ff-d6b1-4cb0-b938-6af885fb4b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 51286ad7-3bbe-4bbd-aec0-8978d550a7fe
+          stepCounter: 331a7271-a621-4b9e-8a6b-abd503a666f5
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: PROVIDERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 806c5015-d317-4c62-b2a1-ea0f3c00a0bc
+                stepCounter: 0a94d0ff-d6b1-4cb0-b938-6af885fb4b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9b42580-5a06-4add-aeda-403592a979d3
+          stepCounter: 331a7271-a621-4b9e-8a6b-abd503a666f5
+        config: {}
+        dataType: TIMESTAMP
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b93ac79c-19cc-4f49-9aea-b08e0c70131d
+                stepCounter: 0a94d0ff-d6b1-4cb0-b938-6af885fb4b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ab27b922-5165-47d5-8a61-5c92cf9fed35
+          stepCounter: 331a7271-a621-4b9e-8a6b-abd503a666f5
+        config: {}
+        dataType: STRING
+        description: The Record Source (RSRC) describes the source of this data.
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9ca10785-d576-4ba4-aee0-f3c9f4ed14d0
+                stepCounter: 0a94d0ff-d6b1-4cb0-b938-6af885fb4b1e
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: DEV
+            nodeName: DVSTG_CLAIMS
+        join:
+          joinCondition: FROM {{ ref('DEV', 'DVSTG_CLAIMS') }} "DVSTG_CLAIMS"
+        name: LINK_CLAIMS_PATIENTS_PROVIDERS
+        noLinkRefs: []
+  name: LINK_CLAIMS_PATIENTS_PROVIDERS
+  overrideSQL: false
+  schema: ""
+  sqlType: DV:::7
+  type: sql
+  version: 1
+type: Node

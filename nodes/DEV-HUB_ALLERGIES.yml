@@ -1,0 +1,124 @@
+fileVersion: 1
+id: 2e4eda4a-c63c-43e3-997a-dc788ca9a9a9
+name: HUB_ALLERGIES
+operation:
+  config:
+    disable_hwm: true
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: DEV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b56bc552-a61e-4380-9176-d9ad90dcc742
+          stepCounter: 2e4eda4a-c63c-43e3-997a-dc788ca9a9a9
+        config:
+          is_Hub_hk: true
+        dataType: STRING
+        description: ""
+        name: H_ALLERGIES_ENC_CODE_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d0fe6e11-53b6-442f-8e14-800f38a80b6b
+                stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d6f0c6c-7cdd-4a8f-ade1-077379524174
+          stepCounter: 2e4eda4a-c63c-43e3-997a-dc788ca9a9a9
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: PATIENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b062fc07-fa5b-4686-9be2-c78618dcc993
+                stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 209168ab-6fd1-4aca-bfef-320e5994528f
+          stepCounter: 2e4eda4a-c63c-43e3-997a-dc788ca9a9a9
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ENCOUNTER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fd4876b1-ad28-4e68-8088-a4d734c8dc39
+                stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9b5bf716-a3ac-4eed-b480-8dc76a1580a3
+          stepCounter: 2e4eda4a-c63c-43e3-997a-dc788ca9a9a9
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fdc20015-c274-4a2d-85f6-fc8b1e9e15be
+                stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e88e283-324f-452e-9df9-965b237b7845
+          stepCounter: 2e4eda4a-c63c-43e3-997a-dc788ca9a9a9
+        config: {}
+        dataType: TIMESTAMP
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7f945f5c-d96c-48dd-a5c5-0000f9011226
+                stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 889f5b99-c053-4699-a1a2-e621546c8309
+          stepCounter: 2e4eda4a-c63c-43e3-997a-dc788ca9a9a9
+        config: {}
+        dataType: STRING
+        description: The Record Source (RSRC) describes the source of this data.
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c8ed5668-2765-4ce3-b765-81bef00cddf5
+                stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DVSTG_ALLERGIES: 3ff41d4e-a247-462d-867c-e354d0309614
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: DEV
+            nodeName: DVSTG_ALLERGIES
+        join:
+          joinCondition: FROM {{ ref('DEV', 'DVSTG_ALLERGIES') }} "DVSTG_ALLERGIES"
+        name: HUB_ALLERGIES
+        noLinkRefs: []
+  name: HUB_ALLERGIES
+  overrideSQL: false
+  schema: ""
+  sqlType: DV:::6
+  type: sql
+  version: 1
+type: Node

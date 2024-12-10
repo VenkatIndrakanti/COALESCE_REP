@@ -1,0 +1,254 @@
+fileVersion: 1
+id: 5493317a-7f42-4eec-b4ee-9db49af4426a
+name: FCT_CLAIMS_PATIENTS_PROVIDERS
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: DEV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b7ff165-dbc5-4166-a384-10dd81994dea
+          stepCounter: 5493317a-7f42-4eec-b4ee-9db49af4426a
+        config: {}
+        dataType: STRING
+        description: ""
+        isBusinessKey: true
+        name: L_CLAIM_PATIENT_PROVIDER_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 513eb5d3-c28c-489a-81e9-4a737f65c45a
+                stepCounter: f90ce040-368f-4974-b2d7-baf607af42d9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 81458e83-ba6a-4eef-a9fb-d89c76e07767
+          stepCounter: 5493317a-7f42-4eec-b4ee-9db49af4426a
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: DIM_PROVIDERS_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ebc8da24-924c-4c68-9be9-06a928ca74b2
+                stepCounter: f90ce040-368f-4974-b2d7-baf607af42d9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bff1a29c-8139-49ed-95d7-e97329f33cf0
+          stepCounter: 5493317a-7f42-4eec-b4ee-9db49af4426a
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: DIM_PATIENTS_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f891db15-679c-420e-af30-48ba6d9c996c
+                stepCounter: f90ce040-368f-4974-b2d7-baf607af42d9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0ab6ca69-68e8-4766-9d0d-14d7aab378db
+          stepCounter: 5493317a-7f42-4eec-b4ee-9db49af4426a
+        config: {}
+        dataType: STRING
+        description: ""
+        name: H_CLAIM_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b5d2a5d2-bf57-4b4f-ad08-5c6ae222bbad
+                stepCounter: f90ce040-368f-4974-b2d7-baf607af42d9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 508c80e4-f04f-4250-b2ea-dcb6d6165c2c
+          stepCounter: 5493317a-7f42-4eec-b4ee-9db49af4426a
+        config: {}
+        dataType: STRING
+        description: ""
+        name: H_PATIENT_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ed74dad1-c682-489f-b593-7f27915d4370
+                stepCounter: f90ce040-368f-4974-b2d7-baf607af42d9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f28f20f5-78ae-45b2-b34a-75dbfb18b338
+          stepCounter: 5493317a-7f42-4eec-b4ee-9db49af4426a
+        config: {}
+        dataType: STRING
+        description: ""
+        name: H_PROVIDER_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c81b1d8d-841f-4455-af55-1f8ee441a0e3
+                stepCounter: f90ce040-368f-4974-b2d7-baf607af42d9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e84184c-10db-4eea-bb86-af8f21553d9e
+          stepCounter: 5493317a-7f42-4eec-b4ee-9db49af4426a
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a6f399a8-41e9-45c2-b8d7-474ca85a61c3
+                stepCounter: f90ce040-368f-4974-b2d7-baf607af42d9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a83364aa-bddd-4855-ae81-ee51ebf3018a
+          stepCounter: 5493317a-7f42-4eec-b4ee-9db49af4426a
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: PATIENTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f8f607af-5600-4559-bada-9d8e8d7d0743
+                stepCounter: f90ce040-368f-4974-b2d7-baf607af42d9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d25b055b-1527-4e25-9140-48dbeb7c51fe
+          stepCounter: 5493317a-7f42-4eec-b4ee-9db49af4426a
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: PROVIDERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b15b9b4a-e1ec-4c3d-9bc5-3ed6ccaf1a58
+                stepCounter: f90ce040-368f-4974-b2d7-baf607af42d9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a4c3f03e-59a3-4b70-ae23-22ee4605fa30
+          stepCounter: 5493317a-7f42-4eec-b4ee-9db49af4426a
+        config: {}
+        dataType: TIMESTAMP
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9f8939ed-4a82-4928-857e-dee1364508ec
+                stepCounter: f90ce040-368f-4974-b2d7-baf607af42d9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 017f6560-55c2-403e-a4a2-711cf8e5d587
+          stepCounter: 5493317a-7f42-4eec-b4ee-9db49af4426a
+        config: {}
+        dataType: STRING
+        description: The Record Source (RSRC) describes the source of this data.
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b4e04dbc-fc16-49ab-968c-e2a48d374b91
+                stepCounter: f90ce040-368f-4974-b2d7-baf607af42d9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c477c1b9-9990-4c83-938b-ad8361cf70ec
+          stepCounter: 5493317a-7f42-4eec-b4ee-9db49af4426a
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: OUTSTANDING_1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 68beb63b-f07e-484e-be91-18a28bb24c2c
+                stepCounter: f90ce040-368f-4974-b2d7-baf607af42d9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b79f35be-fb95-41b3-97a6-1eda40a4300c
+          stepCounter: 5493317a-7f42-4eec-b4ee-9db49af4426a
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: OUTSTANDING_2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7481be8e-513a-4e94-9047-393161da51c0
+                stepCounter: f90ce040-368f-4974-b2d7-baf607af42d9
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 05fcb78e-5f9d-4e82-9565-f0df037ca400
+          stepCounter: 5493317a-7f42-4eec-b4ee-9db49af4426a
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 56401e9f-a2c7-453b-95fe-e5ab6711fec6
+          stepCounter: 5493317a-7f42-4eec-b4ee-9db49af4426a
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: DEV
+            nodeName: STG_CLAIMS_PATIENTS_PROVIDERS
+        join:
+          joinCondition: FROM {{ ref('DEV', 'STG_CLAIMS_PATIENTS_PROVIDERS') }} "STG_CLAIMS_PATIENTS_PROVIDERS"
+        name: FCT_CLAIMS_PATIENTS_PROVIDERS
+        noLinkRefs: []
+  name: FCT_CLAIMS_PATIENTS_PROVIDERS
+  overrideSQL: false
+  schema: ""
+  sqlType: Fact
+  type: sql
+  version: 1
+type: Node

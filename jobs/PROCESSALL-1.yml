@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "1"
+includeSelector: "+{ location: DEV name: FCT_CLAIMS_PATIENTS_PROVIDERS }"
+name: PROCESS ALL
+type: Job

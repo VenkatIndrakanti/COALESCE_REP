@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "5"
+mappingDefinitions:
+  DEV:
+    database: COALESCE_SAMPLE
+    schema: DWH
+  POC:
+    database: MOVING_DATA
+    schema: PUBLIC
+name: POC
+type: Environment

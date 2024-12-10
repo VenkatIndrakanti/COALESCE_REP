@@ -1,0 +1,376 @@
+fileVersion: 1
+id: 3ff41d4e-a247-462d-867c-e354d0309614
+name: DVSTG_ALLERGIES
+operation:
+  config:
+    contains_multiactive_data: false
+    generate_ghost_records: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: DEV
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1f6a7832-31c3-4f67-85cb-5e5a68f84d5b
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: DATE
+        description: ""
+        name: STARTX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c0941892-d229-40db-8e04-7b0d231d02d8
+                stepCounter: e9f6665e-0f2c-41ac-bd89-b09e1b274681
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e3b59fc-3e73-4220-b576-523c7c21fc1d
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: DATE
+        description: ""
+        name: STOPX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4997e966-7a9c-4bde-b48d-76e28cf3d296
+                stepCounter: e9f6665e-0f2c-41ac-bd89-b09e1b274681
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b062fc07-fa5b-4686-9be2-c78618dcc993
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: PATIENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e1b360b4-389c-43ae-9421-a8fdd1dddd8c
+                stepCounter: e9f6665e-0f2c-41ac-bd89-b09e1b274681
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd4876b1-ad28-4e68-8088-a4d734c8dc39
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ENCOUNTER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c652cee8-fbb5-4c9d-a4c5-cbcac3ec6b24
+                stepCounter: e9f6665e-0f2c-41ac-bd89-b09e1b274681
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fdc20015-c274-4a2d-85f6-fc8b1e9e15be
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b333e14a-f0f6-4403-98a0-e4161079c458
+                stepCounter: e9f6665e-0f2c-41ac-bd89-b09e1b274681
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a428e39d-2cfd-49f0-ab61-07fcb5f350db
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: SYSTEM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7ca67b72-80c6-4a65-854f-b2efe64ed4d1
+                stepCounter: e9f6665e-0f2c-41ac-bd89-b09e1b274681
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9fde9cc7-3944-4ab1-a040-c63773f2903b
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: DESCRIPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 36a23aff-f2ae-4ca4-8a59-aa603b84a7a5
+                stepCounter: e9f6665e-0f2c-41ac-bd89-b09e1b274681
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 69153da1-fa8a-4eac-86f6-d822de41ca15
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aff590ba-951e-4a79-b935-8e833811da06
+                stepCounter: e9f6665e-0f2c-41ac-bd89-b09e1b274681
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7dccf07-eca0-439c-b00d-fe838ca25f84
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CATEGORY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 398bddce-6d99-4193-a30b-406c52be4019
+                stepCounter: e9f6665e-0f2c-41ac-bd89-b09e1b274681
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 153152fc-2b71-41f9-bfa4-e0160d5cc177
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: REACTION_1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fb930b8f-97aa-4051-bf06-c7d8ae5bc7a8
+                stepCounter: e9f6665e-0f2c-41ac-bd89-b09e1b274681
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e1826cec-9bee-49c0-8838-5c6224f4e944
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: DESCRIPTION_1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c897953e-f70f-4251-8395-cbccec9e1acb
+                stepCounter: e9f6665e-0f2c-41ac-bd89-b09e1b274681
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6257736b-dc75-41b4-a8cc-c656513a1969
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: SEVERITY_1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f6b57a7f-1f3b-454b-a163-46a2da7ee3a1
+                stepCounter: e9f6665e-0f2c-41ac-bd89-b09e1b274681
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8a30794d-abed-4ad7-a2b5-12678696ca9f
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: REACTION_2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8ecf01a5-cc3a-4c73-9bd8-be16b6b1277a
+                stepCounter: e9f6665e-0f2c-41ac-bd89-b09e1b274681
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 749d8da7-da10-4fd8-8bd3-b51a5eaf8208
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: DESCRIPTION_2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cf50d571-c99c-4520-8b23-14836391235c
+                stepCounter: e9f6665e-0f2c-41ac-bd89-b09e1b274681
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 015272a9-8578-4096-be4a-da6e8d9898d6
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: SEVERITY_2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 60cbd4d7-522d-44ec-9fce-3748bc521137
+                stepCounter: e9f6665e-0f2c-41ac-bd89-b09e1b274681
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee04e02b-cd21-450d-8d29-1c91e91e54fb
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: SYNTHEA_RUN_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c5e17ec4-35e8-470e-ab02-642d157b403a
+                stepCounter: e9f6665e-0f2c-41ac-bd89-b09e1b274681
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1936bdd6-5f25-470d-9a1f-5254d596ae8b
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: SYNTHEA_RUN_STATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 20bb9161-4e20-4db2-86c9-6175c9ad2523
+                stepCounter: e9f6665e-0f2c-41ac-bd89-b09e1b274681
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f945f5c-d96c-48dd-a5c5-0000f9011226
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        is_system_ldts: true
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: SYSDATE()
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c8ed5668-2765-4ce3-b765-81bef00cddf5
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: The Record Source (RSRC) describes the source of this data.
+        is_system_rsrc: true
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "{{record_source()}}"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d0fe6e11-53b6-442f-8e14-800f38a80b6b
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        hashDetails:
+          hashAlgorithm: SHA1
+        hashedColumns:
+          - columnCounter: b062fc07-fa5b-4686-9be2-c78618dcc993
+            stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+          - columnCounter: fd4876b1-ad28-4e68-8088-a4d734c8dc39
+            stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+          - columnCounter: fdc20015-c274-4a2d-85f6-fc8b1e9e15be
+            stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        name: H_ALLERGIES_ENC_CODE_KEY
+        nullable: true
+        sourceColumnReferences: []
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7ae4fc5a-48b9-4905-82ca-20d96ab62635
+          stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        hashDetails:
+          hashAlgorithm: SHA1
+        hashedColumns:
+          - columnCounter: 1f6a7832-31c3-4f67-85cb-5e5a68f84d5b
+            stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+          - columnCounter: 3e3b59fc-3e73-4220-b576-523c7c21fc1d
+            stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+          - columnCounter: a428e39d-2cfd-49f0-ab61-07fcb5f350db
+            stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+          - columnCounter: 9fde9cc7-3944-4ab1-a040-c63773f2903b
+            stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+          - columnCounter: 69153da1-fa8a-4eac-86f6-d822de41ca15
+            stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+          - columnCounter: b7dccf07-eca0-439c-b00d-fe838ca25f84
+            stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+          - columnCounter: 153152fc-2b71-41f9-bfa4-e0160d5cc177
+            stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+          - columnCounter: e1826cec-9bee-49c0-8838-5c6224f4e944
+            stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+          - columnCounter: 6257736b-dc75-41b4-a8cc-c656513a1969
+            stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+          - columnCounter: 8a30794d-abed-4ad7-a2b5-12678696ca9f
+            stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+          - columnCounter: 749d8da7-da10-4fd8-8bd3-b51a5eaf8208
+            stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+          - columnCounter: 015272a9-8578-4096-be4a-da6e8d9898d6
+            stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+          - columnCounter: ee04e02b-cd21-450d-8d29-1c91e91e54fb
+            stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+          - columnCounter: 1936bdd6-5f25-470d-9a1f-5254d596ae8b
+            stepCounter: 3ff41d4e-a247-462d-867c-e354d0309614
+        name: SAT_ALLERGIES_HASH
+        nullable: true
+        sourceColumnReferences: []
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: POC
+            nodeName: ALLERGIES
+        join:
+          joinCondition: FROM {{ ref('POC', 'ALLERGIES') }} "ALLERGIES"
+        name: DVSTG_ALLERGIES
+        noLinkRefs: []
+  name: DVSTG_ALLERGIES
+  overrideSQL: false
+  schema: ""
+  sqlType: DV:::4
+  type: sql
+  version: 1
+type: Node

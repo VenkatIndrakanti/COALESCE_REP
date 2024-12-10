@@ -1,0 +1,95 @@
+fileVersion: 1
+id: 85ba7ece-5fce-4df0-9c7b-a273791389ac
+name: HUB_CLAIMS
+operation:
+  config:
+    disable_hwm: true
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: DEV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b3ab906-5da0-45bc-b7d0-2339c2ecc84c
+          stepCounter: 85ba7ece-5fce-4df0-9c7b-a273791389ac
+        config:
+          is_Hub_hk: true
+        dataType: STRING
+        description: ""
+        name: H_CLAIM_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c197747d-91b5-4458-98fb-3a5e20a010d4
+                stepCounter: 0a94d0ff-d6b1-4cb0-b938-6af885fb4b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 57dfd390-009b-4208-8b79-62a6ba4ee4fe
+          stepCounter: 85ba7ece-5fce-4df0-9c7b-a273791389ac
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d4435114-ab66-4ef7-9d05-c168c49dd2b5
+                stepCounter: 0a94d0ff-d6b1-4cb0-b938-6af885fb4b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b70cc31-42f4-48cc-b2d2-73ff5f4cecf9
+          stepCounter: 85ba7ece-5fce-4df0-9c7b-a273791389ac
+        config: {}
+        dataType: TIMESTAMP
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b93ac79c-19cc-4f49-9aea-b08e0c70131d
+                stepCounter: 0a94d0ff-d6b1-4cb0-b938-6af885fb4b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 84f0b95b-cc41-4847-99e2-be681085446a
+          stepCounter: 85ba7ece-5fce-4df0-9c7b-a273791389ac
+        config: {}
+        dataType: STRING
+        description: The Record Source (RSRC) describes the source of this data.
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9ca10785-d576-4ba4-aee0-f3c9f4ed14d0
+                stepCounter: 0a94d0ff-d6b1-4cb0-b938-6af885fb4b1e
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: DEV
+            nodeName: DVSTG_CLAIMS
+        join:
+          joinCondition: FROM {{ ref('DEV', 'DVSTG_CLAIMS') }} "DVSTG_CLAIMS"
+        name: HUB_CLAIMS
+        noLinkRefs: []
+  name: HUB_CLAIMS
+  overrideSQL: false
+  schema: ""
+  sqlType: DV:::6
+  type: sql
+  version: 1
+type: Node

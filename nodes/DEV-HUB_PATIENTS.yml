@@ -1,0 +1,95 @@
+fileVersion: 1
+id: 27c31818-82a5-46f5-becf-bd9bea97b815
+name: HUB_PATIENTS
+operation:
+  config:
+    disable_hwm: true
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: DEV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1e0f36e8-3819-4954-a9b3-720a6b6bf372
+          stepCounter: 27c31818-82a5-46f5-becf-bd9bea97b815
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c9a4f572-ded7-4543-b887-6d730a853c3e
+                stepCounter: 997b949f-9f97-43cd-8f59-b20ee32653a8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c712b5fb-0a0b-4c86-9b3a-17bf90137e0d
+          stepCounter: 27c31818-82a5-46f5-becf-bd9bea97b815
+        config:
+          is_Hub_hk: true
+        dataType: STRING
+        description: ""
+        name: H_PATIENT_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1c7d8285-9ebb-4869-92a5-97a84e4b87b0
+                stepCounter: 997b949f-9f97-43cd-8f59-b20ee32653a8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 561fa955-30cf-4bf2-97b1-5cfb38745838
+          stepCounter: 27c31818-82a5-46f5-becf-bd9bea97b815
+        config: {}
+        dataType: TIMESTAMP
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1157fa75-e24d-445b-beb3-e4b579016fcc
+                stepCounter: 997b949f-9f97-43cd-8f59-b20ee32653a8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 703a1e94-2411-41bc-9ca3-516baefea602
+          stepCounter: 27c31818-82a5-46f5-becf-bd9bea97b815
+        config: {}
+        dataType: STRING
+        description: The Record Source (RSRC) describes the source of this data.
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0cdd93e1-a4b1-4d41-83c1-c123890506c3
+                stepCounter: 997b949f-9f97-43cd-8f59-b20ee32653a8
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: DEV
+            nodeName: DVSTG_PATIENTS
+        join:
+          joinCondition: FROM {{ ref('DEV', 'DVSTG_PATIENTS') }} "DVSTG_PATIENTS"
+        name: HUB_PATIENTS
+        noLinkRefs: []
+  name: HUB_PATIENTS
+  overrideSQL: false
+  schema: ""
+  sqlType: DV:::6
+  type: sql
+  version: 1
+type: Node
