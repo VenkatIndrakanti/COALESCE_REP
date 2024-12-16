@@ -8,7 +8,7 @@ operation:
     testsEnabled: true
   database: ""
   deployEnabled: true
-  description: ""
+  description: DIM PATIENTS table
   isMultisource: false
   locationName: DEV
   materializationType: table
@@ -67,7 +67,7 @@ operation:
           stepCounter: ce08d662-4cd6-460f-86b7-2559aafe7b9f
         config: {}
         dataType: DATE
-        description: ""
+        description: Patient Birth Date
         name: BIRTHDATE
         nullable: true
         sourceColumnReferences:
@@ -95,7 +95,7 @@ operation:
           stepCounter: ce08d662-4cd6-460f-86b7-2559aafe7b9f
         config: {}
         dataType: VARCHAR(256)
-        description: ""
+        description: Patient Social Security Number
         name: SSN
         nullable: true
         sourceColumnReferences:
